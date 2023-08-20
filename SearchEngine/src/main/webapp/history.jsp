@@ -2,18 +2,19 @@
 <%@page import= "com.Engine.HistoryResults"%>
 <html>
 <head>
-<link rel="stylesheet"  type="text/css" href="style.css">
+<link rel="stylesheet"  type="text/css" href="styles.css">
 </head>
 <body>
+     <h1 class="text-d">QUEST</h1>
     <div class="form-div">
             <div class="button-container1"></div>
             <form action="Search">
               <input type="text" style="font-size: 1.1rem;" placeholder="search you favourite topic" name="keyword">
-              <button type="submit" class="search">Search</button>
+              <button type="submit" class="search-one">Search</button>
             </form>
     </div>
 
-
+  <div class = "showTable">
     <table border=2  class="table-result">
          <tr>
               <th>Title</th>
@@ -31,5 +32,6 @@
             }
          %>
     </table>
+    </div>
 </body>
 </html>
